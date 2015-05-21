@@ -5,12 +5,30 @@
     </h1>
   </header>
   <section class="content">
-    Company: <%= @jobs.company %> <br>
-    Phone: <%= @jobs.phone %> <br>
-    Contact: <%= @jobs.contact %> <br>
-    Location: <%= @jobs.location %> <br>
-    Job Title: <%= @jobs.job_title %> <br>
-    Notes: <%= @jobs.notes %>
+    <span class="title">
+      Company: <br>
+    </span>
+      <%= @jobs.company %> <br>
+    <span class="title">
+      Phone: <br>
+    </span>
+      <%= @jobs.phone %> <br>
+    <span class="title">
+      Contact: <br>
+    </span>
+       <%= @jobs.contact %> <br>
+    <span class="title">
+      Location:  <br>
+    </span>
+      <%= @jobs.location %> <br>
+    <span class="title">
+      Job Title: <br>
+    </span>
+      <%= @jobs.job_title %> <br>
+    <span class="title">
+      Notes: <br>
+    </span>
+      <%= @jobs.notes %>
     <br><br>
     <%= link_to 'Edit Job', edit_job_path(@job) %>
     <!--delete worked then suddenly stopped, will test later -->
