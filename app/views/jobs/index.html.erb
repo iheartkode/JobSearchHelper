@@ -3,10 +3,11 @@
   <h1>Jobby Job Hunting</h1>
 </header>
 <section class="content">
-<h2>Listing Jobs I applied for:</h2>
+  <h2>Jobs I applied for:</h2>
 
-<% @jobs.each do |job| %>
- <%= link_to job.company, job %> <br>
-<% end %>
+  <% @jobs.each do |job| %>
+   <%= link_to job.company, job %> <br>
+  <% end %>
+
   </section>
 </div>

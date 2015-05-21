@@ -48,6 +48,6 @@ def set_job
       @job = Job.find(params[:id])
   end
   def job_params
-    params.require(:job).permit(:company, :contact, :phone, :location, :notes)
+    params.require(:job).permit(:company, :contact, :phone, :location,:job_title, :notes)
   end
 end
