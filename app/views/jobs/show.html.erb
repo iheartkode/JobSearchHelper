@@ -1,10 +1,18 @@
-<h1>Job I Applied For:</h1>
-Company: <%= @jobs.company %> <br>
-Phone: <%= @jobs.phone %> <br>
-Contact: <%= @jobs.contact %> <br>
-Location: <%= @jobs.location %> <br>
-Notes: <%= @jobs.notes %>
-<br>
-<%= link_to "Delete",  job_path(@job), method: :delete, data: { confirm: "Are you sure?" }%>
-<%= link_to 'Edit Job', edit_job_path(@job) %>
-<%= link_to 'Home', root_path %>
+<div class="container">
+  <header>
+    <h1>
+      Job I Applied For:
+    </h1>
+  </header>
+  <section class="content">
+    Company: <%= @jobs.company %> <br>
+    Phone: <%= @jobs.phone %> <br>
+    Contact: <%= @jobs.contact %> <br>
+    Location: <%= @jobs.location %> <br>
+    Notes: <%= @jobs.notes %>
+    <br><br>
+    <%= link_to 'Edit Job', edit_job_path(@job) %>
+    <%= link_to "Delete",  job_path(@job), method: :delete, data: { confirm: "Are you sure?" } %>
+    <%= link_to 'Back to Job List', root_path %>
+  </section>
+</div>
