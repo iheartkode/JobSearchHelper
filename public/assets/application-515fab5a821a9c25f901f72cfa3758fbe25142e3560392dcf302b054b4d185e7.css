@@ -1,0 +1,80 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+/* line 3, /home/mark/railsapps/jobby_job/app/assets/stylesheets/jobs.scss */
+a:visted {
+  color: #FF8E51;
+}
+
+/* line 7, /home/mark/railsapps/jobby_job/app/assets/stylesheets/jobs.scss */
+a:link {
+  color: #FF8E51;
+  text-decoration: none;
+}
+
+/* line 11, /home/mark/railsapps/jobby_job/app/assets/stylesheets/jobs.scss */
+a:hover {
+  color: #333;
+}
+
+/* line 15, /home/mark/railsapps/jobby_job/app/assets/stylesheets/jobs.scss */
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/* line 20, /home/mark/railsapps/jobby_job/app/assets/stylesheets/jobs.scss */
+header {
+  color: #333;
+}
+
+/* line 24, /home/mark/railsapps/jobby_job/app/assets/stylesheets/jobs.scss */
+header h1 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 28, /home/mark/railsapps/jobby_job/app/assets/stylesheets/jobs.scss */
+.content {
+  font-size: 25px;
+}
+
+/* line 32, /home/mark/railsapps/jobby_job/app/assets/stylesheets/jobs.scss */
+.content h1, h2, h3 {
+  font-family: 'Open Sans', sans-serif;
+  color: #444;
+}
+
+/* line 37, /home/mark/railsapps/jobby_job/app/assets/stylesheets/jobs.scss */
+.content a:link {
+  color: #FF8E51;
+  text-decoration: none;
+}
+
+/* line 42, /home/mark/railsapps/jobby_job/app/assets/stylesheets/jobs.scss */
+.content a:visited {
+  color: #FF8E51;
+}
+
+/* line 46, /home/mark/railsapps/jobby_job/app/assets/stylesheets/jobs.scss */
+.content a:hover {
+  color: #444;
+}
+
+/* line 50, /home/mark/railsapps/jobby_job/app/assets/stylesheets/jobs.scss */
+.title {
+  color: #FF8E51;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
