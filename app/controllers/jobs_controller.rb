@@ -7,11 +7,11 @@ class JobsController < ApplicationController
   end
 
   def show
-    @jobs = Job.find(params[:id])
+    @job = Job.find(params[:id])
   end
 
   def new
-    @jobs = Job.new
+    @job = Job.new
   end
 
   def edit
@@ -37,19 +37,18 @@ class JobsController < ApplicationController
     end
   end
 
-
   def destroy
-    @job = Job.find(params[:id])
     @job.destroy
     flash[:success] = "Job was successfully deleted"
     redirect_to root_path
   end
 
 private
-def set_job
+    def set_job
       @job = Job.find(params[:id])
-  end
-  def job_params
-    params.require(:job).permit(:company, :contact, :phone, :location,:job_title, :notes)
-  end
+    end
+
+    def job_params
+      params.require(:job).permit(:company, :contact, :phone, :location,:job_title, :notes)
+    end
 end

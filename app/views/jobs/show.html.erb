@@ -8,27 +8,27 @@
     <span class="title">
       Company: <br>
     </span>
-      <%= @jobs.company %> <br>
+      <%= @job.company %> <br>
     <span class="title">
       Phone: <br>
     </span>
-      <%= @jobs.phone %> <br>
+      <%= @job.phone %> <br>
     <span class="title">
       Contact: <br>
     </span>
-       <%= @jobs.contact %> <br>
+       <%= @job.contact %> <br>
     <span class="title">
       Location:  <br>
     </span>
-      <%= @jobs.location %> <br>
+      <%= @job.location %> <br>
     <span class="title">
       Job Title: <br>
     </span>
-      <%= @jobs.job_title %> <br>
+      <%= @job.job_title %> <br>
     <span class="title">
       Notes: <br>
     </span>
-      <%= @jobs.notes %>
+      <%= @job.notes %>
     <br><br>
     <%= link_to 'Edit Job', edit_job_path(@job) %>
     <%= link_to "Delete", job_path(@job), method: :delete, data: { confirm: "Are you sure?" } %>
