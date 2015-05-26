@@ -1,5 +1,5 @@
 class JobsController < ApplicationController
-  
+
   before_action :set_job, only: [:show, :edit, :update, :destroy]
 
   def index
@@ -37,7 +37,9 @@ class JobsController < ApplicationController
     end
   end
 
+
   def destroy
+    @job = Job.find(params[:id])
     @job.destroy
     flash[:success] = "Job was successfully deleted"
     redirect_to root_path

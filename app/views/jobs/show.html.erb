@@ -31,7 +31,6 @@
       <%= @jobs.notes %>
     <br><br>
     <%= link_to 'Edit Job', edit_job_path(@job) %>
-    <!--delete worked then suddenly stopped, will test later -->
     <%= link_to "Delete", job_path(@job), method: :delete, data: { confirm: "Are you sure?" } %>
     <%= link_to 'Back to Job List', root_path %>
   </section>
